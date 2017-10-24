@@ -1,5 +1,5 @@
 <?php
-class ShopProduct{
+class ShopProduct implements Chargeble {
     private $title;
     private $producerMainName;
     private $producerFirstName;
