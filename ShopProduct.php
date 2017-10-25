@@ -1,5 +1,11 @@
 <?php
-class ShopProduct implements Chargeble {
+require "Chargeble.php";
+require "PriceUtilities.php";
+require "IdentityTrait.php";
+require "IdentityObject.php";
+
+class ShopProduct implements IdentityObject {
+    use PriceUtilities, IdentityTrait;
     private $title;
     private $producerMainName;
     private $producerFirstName;
@@ -9,6 +15,7 @@ class ShopProduct implements Chargeble {
     public $type = "ShopProduct";
     const AVAILABLE = 0;
     const OUT_OF_STOCK = 1;
+
 
     public function __construct($title, $firstName, $mainName, $price){
         $this->title=$title;

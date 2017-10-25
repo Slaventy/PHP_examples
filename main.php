@@ -6,6 +6,9 @@ require "ShopProductWriter.php";
 require "StaticExample.php";
 require "XmlProductWriter.php";
 require "TextProductWriter.php";
+require "UtilityService.php";
+
+
 
 $product1 = new ShopProduct("Собачье сердце", "Михаил", "Булгаков", 5.99);
 $product2 = new CDProduct("Пропавший без вести", "Группа","ДДТ", 10.99, 60.33);
@@ -35,8 +38,18 @@ $product3 = new BookProduct("Собачье сердце", "Михаил", "Бу
 
 //print ShopProduct::AVAILABLE . "\n";
 
-$writer = new TextProductWriter();
-$writer->addProduct($product1);
-$writer->addProduct($product2);
-$writer->addProduct($product3);
-$writer->write();
+//$writer = new TextProductWriter();
+//$writer->addProduct($product1);
+//$writer->addProduct($product2);
+//$writer->addProduct($product3);
+//$writer->write();
+
+//$p = new ShopProduct();
+//print $product1->calculateTax(100)."\n";
+//
+//$u = new UtilityService();
+//print $u->calculateTax(10)."\n";
+
+print $product1->calculateTax(100)."\n";
+print $product1->generateId()."\n";
+
