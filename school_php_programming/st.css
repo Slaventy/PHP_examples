@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+p {
+    margin: 0px;
+    padding: 0px;
+    color:red;
+}
+
+.a {
+    color: blue;
+    text-align: center;
+}
+
+#a{
+    color: green;
+    text-align:right;
+}
+.special-table{
+    height: 500px;
+    width: 100%;
+}
+#header{}
+#content{}
+#footer{
+    text-align: center;
+    font-size: 10px;
+    color: gray;
+}
+
+
+.class1 {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid green;
+}
