@@ -31,5 +31,6 @@ p {
 .class1 {
     margin: 5px;
     padding: 10px;
-    border: 1px solid green;
+    border-top: 1px solid green;
+    border-radius:10px;
 }
